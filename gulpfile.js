@@ -42,7 +42,7 @@ gulp.task('sync', () => {
         proxy: "http://localhost:3000",
         port: 3002
     });
-    gulp.watch("./dist/*/*.*").on("change", browserSync.reload);
+    gulp.watch("./dist/*/*.*").on("change", browserSync.stream);
 })
 // Runs of the application
 gulp.task('nodemon',()=> {
@@ -75,7 +75,8 @@ gulp.task('html', () => {
      //   collapseWhitespace: true,
        // removeComments: true
       //}))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'))
+    .pipe(browserSync.stream());
 })
 // Compile SASS
 gulp.task('sass', () => {
@@ -84,7 +85,8 @@ gulp.task('sass', () => {
         // Auto-prefix css styles for cross browser compatibility
     .pipe(autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
    // .pipe(csso()) //Minify the CSS
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./dist/css'));
+
 });
 // Moves the JS required from Node Modules
 gulp.task("externaljs", () => {
