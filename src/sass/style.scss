@@ -17,21 +17,103 @@ section{
     //border: 1px solid blue;
 }
 
-
-
 #nav-bar {
     font-family: Arial, sans-serif;
     height: 10vh;
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: #94D1BE;
+    background-color: rgb(137, 201, 180);
     //94D1BE
 }
 
+ul.nav {
+    display:table;
+    list-style-type: none;
+    //margin: 0;
+    //padding: 0;
+    width: 60px;
+    //height: 100%;
+}
+
+ul.nav li {
+    display: table-cell; 
+    text-align: center; 
+    //width:160px; 
+    padding: 0px 10px;
+    height: 10vh;
+    vertical-align: middle;
+    color: white;
+}
+
+.nav-item1 {
+    background: #7BB8A5;
+    
+}
+
+.nav-item2 {
+    background-color: #619E8B;
+}
+
+.nav-item3 {
+    background-color: #488572;
+}
+
+.nav-item4 {
+    background-color: #2E6B58;
+}
+
+.nav li:hover {
+    background-color: black;
+}
+
 #landing {
-    height: 20vh;
-    background-color: #DAF0EE;
+    height: 40vh;
+    //background-color: #DAF0EE;
+    //background-color: rgb(193, 241, 237);
+    background-image: linear-gradient( #DAF0EE, #C1D7D5);
+    display: table;
+}
+
+.landing-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.landing-title {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 4vh;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.landing-desc {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 2vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*.buttonWrapper {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+    margin: auto;
+}*/
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.button1 {
+    //align-self: flex-end;
 }
 
 #team {
@@ -41,7 +123,7 @@ section{
 
 #ethos {
     height: 20vh;
-    background-color: #ffffff;
+    background-color: #5e5e5e25;
 }
 
 #footer {
@@ -49,33 +131,5 @@ section{
     background-color: #3B413C;   
 }
 
-.landing-title {
-    display: flex;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
-    //vertical-align: middle;
-    //transform: translateY(50%, -20%);
-    top: 50%;
-}
 
-.nav-bar .nav {
-    display:inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 60px;
-}
 
-.nav li {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 0px 10px;    
-    text-decoration: none;
-}
-
-.nav li:hover {
-    background-color: black;
-}
