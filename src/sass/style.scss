@@ -13,10 +13,32 @@ section{
     border: 1px solid blue;
 }
 
-.nav-bar {
-    background-color: red;
+#nav-bar {
+    height: 6vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
 }
-.nav-bar .nav {
-    list-style-type: none;
 
+.nav-bar .nav {
+    display:inline-block;
+    //float:left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+}
+
+.nav li {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.nav li:hover {
+    background-color: white;
 }
