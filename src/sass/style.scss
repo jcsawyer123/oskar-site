@@ -9,6 +9,12 @@ body{
 
 .site-heading {
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 section{
@@ -28,6 +34,7 @@ section{
 }
 
 ul.nav {
+    margin-left: 35vw;
     display:table;
     list-style-type: none;
     //margin: 0;
@@ -48,7 +55,6 @@ ul.nav li {
 
 .nav-item1 {
     background: #7BB8A5;
-    
 }
 
 .nav-item2 {
@@ -175,26 +181,42 @@ $arrow-line-width: 4px;
 #team {
     display: flex;
     flex-direction: column;
-    //justify-content: center;
-    height: 20vh;
+    justify-content: center;
+    //vertical-align: middle;
+    height: 50vh;
     background-color: #9DB5B2;
 }
 
 #meet-team {
     text-align: center;
-    background: linear-gradient(to right, #F16A70, #F16A70) no-repeat;
-    background-size: 50% 3px;
-    background-position: left bottom;
+    margin-top: 0px;
 }
 
 #team-heading {
     display: flex;
     //align-content: center;
     justify-content: center;
+    background: linear-gradient(to right, rgb(61, 110, 95), #2E6B58) no-repeat;
+    background-size: 30% 8px;
+    background-position: center bottom;
+}
+
+#ethos-heading {
+    display: flex;
+    //align-content: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(61, 110, 95), #2E6B58) no-repeat;
+    background-size: 10% 8px;
+    background-position: left bottom;
+}
+
+#ethos-title {
+    font-family: Arial, sans-serif;
+    color: rgb(20, 61, 48);
 }
 
 #ethos {
-    height: 20vh;
+    height: 40vh;
     background-color: #5e5e5e25;
 }
 
@@ -203,5 +225,61 @@ $arrow-line-width: 4px;
     background-color: #3B413C;   
 }
 
+img {
+    margin:auto;
+}
 
+.image1 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    //margin:auto;
+}
 
+.image2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.image3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#team-members {
+    display: flex;
+    //vertical-align: middle - 10vh;
+    margin-top: 12vh;
+    /*justify-content: center;
+    align-items: center;
+    align-content: center;*/
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user1 {
+    margin-right: 0px;
+}
+
+.user3 {
+    margin-left: 0px;
+}
+
+.user-desc, .user-role {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 2vh;
+    margin: 1.5vh 0px 0px 0px;
+}
+
+.user-role {
+    margin-top: 3px;
+    color: rgb(102, 102, 102);
+}
