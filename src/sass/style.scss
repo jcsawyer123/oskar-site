@@ -137,9 +137,9 @@ $arrow-line-width: 4px;
   //justify-content: center;
   width: 100px;
   height: 100px;  
-  position: relative;
+  //position: relative;
+  //left: 50%;
   
-  left: 50%;
   @include arrow-transitions(0deg);
   &:hover {
     cursor: pointer;
@@ -156,7 +156,7 @@ $arrow-line-width: 4px;
 }
 .arrow {
   position: absolute;
-  left: 50%;
+  //left: 50%;
   transition: all .4s ease;
   &:before,
   &:after {
@@ -185,7 +185,6 @@ $arrow-line-width: 4px;
 
 .image-grid {
     display: grid;
-    height: 100%;
     grid-template-columns: 15vw 15vw 15vw;
     grid-template-rows: 15vh 15vh 15vh;
     grid-gap: 2px 2px;
@@ -196,10 +195,19 @@ $arrow-line-width: 4px;
     //left: 50%;
     //border: 4px solid red;
     //margin: auto;
+    border: 3px solid blue;
+    width: 100%;
+}
+.image-grid.grid-icontainer.grid-item.grid-wrapper {
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-wrapper {
-    margin-top: 50px;
+    border: 3px solid red;
+    //margin-top: 50px;
+    margin: 50px 0 0 0;
+    width: 100%;
 }
 
 .grid-item {
