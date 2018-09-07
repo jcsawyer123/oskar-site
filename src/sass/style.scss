@@ -4,6 +4,8 @@ body{
 }
 
 #container{
+    display: flex;
+    flex-direction: column;
     height: 100%;
 }
 
@@ -207,35 +209,39 @@ $arrow-line-width: 4px;
     //justify-content: center;
     background: linear-gradient(to right, rgb(61, 110, 95), #2E6B58) no-repeat;
     background-size: 6% 6px;
-    background-position: 1.1% 85%;
+    background-position: 10vw 4.5vh;
 }
 
 .ethos-title {
     //display: flex;
     font-family: Arial, sans-serif;
     color: rgb(20, 61, 48);
-    margin: 1vh 0 0 1vh;
+    margin: 2vh 0 0 10vw;
 }
 
 .ethos-text {
     font-family: Arial, sans-serif;
-    margin-left: 2vh;
-    margin-right: 2vh;
+    //margin-left: 2vh;
+    //margin-right: 2vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 #ethos-desc {
     display: flex;
-    border: 2px solid red;
+    //border: 2px solid red;
+    max-width: 80vw;
 }
 #ethos {
     display: flex;
     flex-direction: column;
-    height: 32vh;
+    //height: 36vh;
     //background-color: #5e5e5e25;
-
+    align-items: center;
+    flex-grow: 1;
 }
 
 #footer {
-    display: flex;
+    //display: flex;
     height: 5vh;
     background-color: #3B413C;   
 }
@@ -271,20 +277,23 @@ img {
     /*justify-content: center;
     align-items: center;
     align-content: center;*/
+    justify-content: center;
 }
 
 .user {
     display: flex;
+    //border: 2px solid red;
     flex-direction: column;
     justify-content: center;
+    width: 18vw;
 }
 
-.user1 {
-    margin-right: 0px;
+#user1 {
+    //margin-left: 5vw;
 }
 
-.user3 {
-    margin-left: 0px;
+#user3 {
+    //margin-left: 5vw;
 }
 
 .user-desc, .user-role {
