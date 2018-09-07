@@ -76,18 +76,19 @@ ul.nav li {
 }
 
 #landing {
-    height: 60vh;
+    height: 80vh;
     //background-color: #DAF0EE;
     //background-color: rgb(193, 241, 237);
     background-image: linear-gradient( #DAF0EE, #C1D7D5);
     display: flex;
     flex-direction: column;
     //align-items: center;
-    justify-content: center;
+    //justify-content: center;
 }
 
 .landing-text {
     //display: flex;
+    margin-top: 8vh;
     vertical-align: middle;
 }
 
@@ -130,12 +131,14 @@ $arrow-line-width: 4px;
 // arrows
 .arrow-container {
   display: flex;
+  //border: 3px solid red;
+  margin-top: 45px;
   //margin-top: 80px;
   //justify-content: center;
   width: 100px;
   height: 100px;  
   position: relative;
-  top: 30%;
+  
   left: 50%;
   @include arrow-transitions(0deg);
   &:hover {
@@ -178,6 +181,31 @@ $arrow-line-width: 4px;
       top: 15 + (100% * $i/5);
     }
   }
+}
+
+.image-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-rows: 15vh 15vh 15vh;
+    grid-gap: 2px 2px;
+    grid-template-areas: ". . ." ". . ." ". . .";
+    //border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    //left: 50%;
+    //border: 4px solid red;
+    //margin: auto;
+}
+
+.grid-wrapper {
+    margin-top: 50px;
+}
+
+.grid-item {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 #team {
@@ -241,7 +269,7 @@ $arrow-line-width: 4px;
 }
 
 #footer {
-    //display: flex;
+    display: flex;
     height: 5vh;
     background-color: #3B413C;   
 }
@@ -286,6 +314,7 @@ img {
     flex-direction: column;
     justify-content: center;
     width: 18vw;
+    border: red 3px;
 }
 
 #user1 {
