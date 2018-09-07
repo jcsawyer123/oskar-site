@@ -78,6 +78,10 @@ gulp.task('html', () => {
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.stream());
 })
+gulp.task('img', () => {
+    return gulp.src('./src/img/')
+    .pipe(gulp.dest('./dist/img/'));
+})
 // Compile SASS
 gulp.task('sass', () => {
     return gulp.src(["./src/sass/*.scss", "node_modules/bootstrap/scss/bootstrap.scss"])
