@@ -65,7 +65,7 @@ gulp.task('watch', ()=> {
     SRC to Dist
     ==================================================
 */
-gulp.task('dist', ['html', 'sass', 'externaljs', 'scripts'], () => {
+gulp.task('dist', ['html', 'sass', 'externaljs', 'scripts', 'img'], () => {
     console.log("Files moved to dist");
 })
 // Moves html
